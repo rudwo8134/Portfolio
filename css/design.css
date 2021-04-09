@@ -1,3 +1,5 @@
+
+
 :root{
     --text-color: #f0f4f5;
     --backgound-color:#263343;
@@ -6,6 +8,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'RocknRoll One'
+   
 }
 
 a {
@@ -62,9 +65,52 @@ a {
     font-size:24px;
     color:#d49466;
 }
-/* 본문 만들기*/
+
+.experience{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+}
+.experience h2{
+
+}
+.experience h1{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+.experience span{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top:  10px;
+    flex-wrap: nowrap;
+    }
+.experience .span1 ul,.span1 li{
+    display: flex;
+    flex-direction: column;
+    
+}
+.experience .span2{
+    display: flex;
+    flex-direction: column ;
+}
+.experience .span2 ul, span2.li{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.work2{
+    list-style: none;
+}
+
+
 .cont section{
-    height: 100vh;
+    height: 140vh;
     width:100%;
     padding: 6em;
     box-sizing: border-box;
@@ -80,10 +126,10 @@ a {
     font-size:1.5em;
 }
 
-.cont h2{
-    font-size: 1.0em;
+h2{
+    font-size: .8em;
     text-align: center;
-    margin-top:30%;
+    margin-top:0;
 }
 .sticky{
     padding:3em;
@@ -93,13 +139,14 @@ a {
 }
 .sticky blockquote{
     font-size: 2em;
+    color: black;
     width:30%;
     margin-top:17%;
     position: absolute;
 }
 .sticky span{
     widows: 100%;
-    background:red;
+    background:blue;
     display:block;
     height:5px;
     margin-top: 20px;
@@ -113,12 +160,28 @@ a {
     top:20%;
 }
 .sticky img:nth-of-type(2){
-    width:25%;
+    width:20%;
     right:40%;
     top:15%;
 }
 .sticky:nth-child(odd){
     background: #f1f1f1;
+}
+/* 게시판 */
+.notice{position: relative;}
+.notice h4{font-size:20px; color: #0093bd; padding-bottom: 3px; font-weight: bold;}
+.notice ul li{overflow:hidden; text-overflow: ellipsis; white-space: nowrap;}
+.notice ul li a{font-size:15px;}
+
+
+
+#box{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    border: 5px solid lightgray;
+    margin: auto;
+    top: 0; left: 0; bottom: 0; right: 0; 
 }
 
 section:nth-of-type(1){

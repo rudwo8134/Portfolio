@@ -9,20 +9,23 @@
     <link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap" rel="stylesheet">
     <title>Eric's potfolio</title>
     <script src="Java/main.js" defer></script>
+
 </head>
 
 <body>
+    <header>
     <nav class="navibar">
         <div class="navibar_logo">
             <i class="fas fa-globe-americas"></i>
             <a href="">EricCoding</a>
+           
         </div>
         <ul class="navibar_menu">
-            <li><a href="">Home</a></li>
-            <li id="Experience"><a href="">Experience</a></li>
-            <li><a href="">Project</a></li>
-            <li><a href="">Q/A</a></li>
-            <li><a href="">Contact</a></li>  
+            <li><a href="#target1" class="scroll">home</a></li>
+            <li id="Experience"><a href="#target2" class="scroll">Experience</a></li>
+            <li><a href="#target3" class="scroll">Project</a></li>
+            <li><a href="#target4" class="scroll">Q/A</a></li>
+            <li><a href="#target5" class="scroll">Contact</a></li>  
         </ul>
         <ul class="navibar_icons">
             <li><i class="fab fa-linkedin"></i></li>
@@ -34,42 +37,90 @@
             <i class="fas fa-bars"></i>
         </a>
     </nav>
-    <section class="cont">
-    <section #id>
-        <h1 data-scroll>Introduce  Engineer.Eric</h1>
-        <p>Full-Name =  Eric.Shin<br>Country: South-Korea<br>Date of Birth: 1994/July/27<br>Personality: active, motivated</p>
-        <h2>scroll down</h2>
-    </section>
     <section class="sticky">
+        <div id="target1"></div>
+        <h2>scroll down</h2>
         <blockquote>"I am the smartest Engineer<span></span></blockquote>
         <img id="main" src="photo/profile1.jpg">
         <img id="sub2" src="photo/profile2.jpg">
         <div id="box"></div>
     </section>
-    <section data-scroll>
+    <section class="cont">
+    <section ">
+        <div id="target2"></div>
+        <h1 data-scroll>Introduce  Engineer.Eric</h1>
+        <p class="introeric">Full-Name =  Eric.Shin<br>Country: South-Korea<br>Date of Birth: 1994/July/27<br>Personality: active, motivated</p>
+        <h2>scroll down</h2>
+    </section>
+    <section data-scroll class="experience">
+        <h2>scroll down</h2>
         <h1 >Experience</h1>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente alias ex porro officiis ab? Qui commodi esse, id velit autem nam, enim doloremque praesentium corporis ipsam perferendis cum ut laborum.</p>
+        <span class="span1">Education <br>
+            <li>Graduated with Great GPA</li>
+            <ul>
+                <li>Centennial College - Scarborugh, Toronto</li>
+                <li>Electronics Enginnering technician (SAMSUNG) -2yrs-</li>
+                <li>Electronics Enginnering technology -3yrs-</li>
+            </ul>
+            </ul>
+            <li>Currently on going</li>
+            <ul>
+                <li>McMaster University - Hamilton, Ontario </li>
+                <ul>
+                <li>Software Engineer -Bachelor of Technology -4yrs-</li>
+                </ul>
+            </ul>
+        </span>
+        <span class="span2">
+        <li class="work2">Work Experience</li>
+        <ul>Siemens RuggedCom, vaughan
+            <li>Electronics Technician</li>
+            <dt>From 2019,08 To 2020,08</dt>
+            <li>Failure Analysis technician</li>
+            <dt>From 2020,08 To 2021,04</dt>
+        </ul>
+        </span>
     </section>
     <section>
+        <div id="target3"></div>
+        <h2>scroll down</h2>
         <h1 data-scroll>Project</h1>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente alias ex porro officiis ab? Qui commodi esse, id velit autem nam, enim doloremque praesentium corporis ipsam perferendis cum ut laborum.</p>
     </section>
     <section data-scroll>
+        <div id="target4"></div>
+        <h2>scroll down</h2>
         <h1 >Q/A</h1>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente alias ex porro officiis ab? Qui commodi esse, id velit autem nam, enim doloremque praesentium corporis ipsam perferendis cum ut laborum.</p>
+        <!-- 게시판 -->
+        <div class="notice">
+            <h4>Qustion to Eric</h4>
+            <ul>
+                <li><i class="fas fa-comment-dots"></i> Tell me about yourself</li>
+                <li><i class="fas fa-comment-dots"></i> What attracted you to our company?</li>
+                <li><i class="fas fa-comment-dots"></i> Tell me about your strengths.</li>
+                <li><i class="fas fa-comment-dots"></i> What are your weaknesses? </li>
+                <li><i class="fas fa-comment-dots"></i> Where do you see yourself in five years?</li>
+            </ul>
+            <a href="more" title="moresee"><i class="far fa-plus-square"></i>  more</a>
+        </div>
+        <!-- 게시판 -->
     </section>
     <section>
+        <div id="target5"></div>
+        <h2>scroll down</h2>
         <h1 data-scroll>Contact</h1>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente alias ex porro officiis ab? Qui commodi esse, id velit autem nam, enim doloremque praesentium corporis ipsam perferendis cum ut laborum.</p>
     </section>
     </section>
-
+</header>
     <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TimelineMax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js"></script>
-    <script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/jquery-ui.min.js"></script>
+
+  <script>
         ScrollOut({
             threshold:0.5
         });
