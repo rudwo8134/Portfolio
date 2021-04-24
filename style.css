@@ -83,15 +83,15 @@ nav .navbar .media-icons a:hover{
     z-index: -1;
 }
 .container .girl{
-    top:61px;
+    top:40px;
     width: 100%;
     position: absolute;
-    height:70vh;
+    height:80vh;
     object-fit: cover;
     z-index: -1;
 }
 .container .rock{
-    top:360px;
+    top:380px;
     width: 100%;
     position: absolute;
     height: 40vh;
