@@ -83,7 +83,7 @@ nav .navbar .media-icons a:hover{
     z-index: -1;
 }
 .container .girl{
-    top:40px;
+    top:44px;
     width: 100%;
     position: absolute;
     height:80vh;
@@ -91,7 +91,7 @@ nav .navbar .media-icons a:hover{
     z-index: -1;
 }
 .container .rock{
-    top:380px;
+    top:400px;
     width: 100%;
     position: absolute;
     height: 40vh;
