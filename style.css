@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    text-decoration:none;
+}
+
+.navbar{
+    padding: 20px 0;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+nav .navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+nav .navbar .logo a{
+    margin: 0 30px;
+    font-weight: 500;
+    font-size: 35px;
+    color: #4070f4;
+  }
+  nav .navbar .logo a:hover{
+    color: white;
+  }
+
+nav .navbar .menu{
+    display: flex;
+    position: relative
+}
+nav .navbar .menu a{
+    font-size: 18px;
+    font-weight: 500;
+    color: #0E2431;
+    padding: 6px 0;
+    transition: all 0.4s ease;
+}
+.cancel,.menubutton{
+    display: none;
+}
+.navbar .menu a:hover{
+    color: #4070f4;
+  }
+
+nav .navbar .menu li{
+
+    margin: 0 8px;
+    list-style: none;
+}
+.navbar .media-icons {
+    margin-right:30px;
+}
+nav .navbar .media-icons a{
+    color: #4070f4;
+    font-size: 18px;
+    margin: 0 6px;
+}
+nav .navbar .media-icons a:hover{
+    color: white;
+  
+}
+
+
+.container{
+    height: 100vh;
+}
+
+.container .bg1{
+  
+    width: 100%;
+    position: absolute;
+    height: 110vh;
+    object-fit: cover;
+    z-index: -1;
+}
+.container .girl{
+    top:61px;
+    width: 100%;
+    position: absolute;
+    height:70vh;
+    object-fit: cover;
+    z-index: -1;
+}
+.container .rock{
+    top:360px;
+    width: 100%;
+    position: absolute;
+    height: 40vh;
+    object-fit: cover;
+    z-index: -1;
+
+}
+
+.main-title{
+    position: absolute;
+    top: 35%;
+    left: 80%;
+    transform: translate(-50%,-40%);
+    width: 100%;
+}
+.main-title .text1{
+    font-size:25px;
+    color: black;
+}
+.main-title .text2{
+    font-size:75px;
+    font-weight: 600px;
+    color: black;
+    margin-left: 3px;
+}
+.main-title .text3{
+    font-size:40px;
+    color: black;
+}
+.main-title .text4{
+    font-size:23px;
+    color: black;
+    margin:5px 0;
+}
+.main-title .text4 .canada{
+    color:red;
+    font-weight: 600;
+}
+.main-title .text4 .canada i{
+    color:red;
+    font-weight: 600;
+}
+.content{
+    width: 100%;
+    background:rgb(24,24,24);
+    min-height: 100vh;
+    z-index: 2;
+    position: absolute;
+
+}
+.content-image{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 60vh;
+    text-align: center;
+}
+.text{
+    padding: 2rem 20rem;
+    font-size:  1.1rem;
+}
+
+
+
+@media (max-width:750px){
+    body,html{
+        width: 100%;
+        height: 100%;
+    }
+    nav .navbar .menu a{
+        display: none;
+    }
+    nav .navbar .menu .cancel{
+        display: none
+    }
+    nav .navbar .media-icons a{
+        display: none;
+    }
+    nav .navbar .menu{
+        padding:0 10px;
+        font-size: 35px;
+    }
+    nav .navbar .logo a{
+        font-size: 25px;
+    }
+    .container{
+        width: 100vh;
+        height: 100vh;
+    }
+    .container .bg1{
+        width: 100vh;
+        height: 100vh;
+    }
+    .container .girl{
+        top:235px;
+        left: -250px;
+        width: 100vh;
+        height: 40vh;
+    }
+    .container .rock{
+        top:400px;
+        width: 100vh;
+        height: 40vh;
+    }
+    .main-title{
+        position: absolute;
+        top: 35%;
+        left: 73%;
+        transform: translate(-50%,-40%);
+        width: 100vh;
+    }
+    .text{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100vh;
+    }
+    .container .text1{
+        font-size: 18px;
+        width: 100vh;
+    }
+    .container .text2{
+        font-size: 26px; 
+        width: 100vh;
+    }
+    .container .text3{
+        font-size: 17px;
+        font-weight: 500;
+        width: 100vh;
+    }
+    .container .text4{
+        font-size: 15px;
+        width: 100vh;
+    }
+}
